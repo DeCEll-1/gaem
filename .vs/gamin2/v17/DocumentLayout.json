@@ -1,0 +1,61 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Github\\gaem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4E541576-72CD-4F92-B8E5-94BDCD18EB2C}|gamin2\\gamin2.csproj|c:\\github\\gaem\\gamin2\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E541576-72CD-4F92-B8E5-94BDCD18EB2C}|gamin2\\gamin2.csproj|solutionrelative:gamin2\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E541576-72CD-4F92-B8E5-94BDCD18EB2C}|gamin2\\gamin2.csproj|C:\\Github\\gaem\\gamin2\\map.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E541576-72CD-4F92-B8E5-94BDCD18EB2C}|gamin2\\gamin2.csproj|solutionrelative:gamin2\\map.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Map.cs",
+              "DocumentMoniker": "C:\\Github\\gaem\\gamin2\\Map.cs",
+              "RelativeDocumentMoniker": "gamin2\\Map.cs",
+              "ToolTip": "C:\\Github\\gaem\\gamin2\\Map.cs",
+              "RelativeToolTip": "gamin2\\Map.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T06:53:58.735Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Main.cs",
+              "DocumentMoniker": "C:\\Github\\gaem\\gamin2\\Main.cs",
+              "RelativeDocumentMoniker": "gamin2\\Main.cs",
+              "ToolTip": "C:\\Github\\gaem\\gamin2\\Main.cs",
+              "RelativeToolTip": "gamin2\\Main.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T06:25:47.217Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+C:\Users\poedx\source\repos\gamin2\gamin2\bin\Debug\gamin2.exe.config
+C:\Users\poedx\source\repos\gamin2\gamin2\bin\Debug\gamin2.exe
+C:\Users\poedx\source\repos\gamin2\gamin2\bin\Debug\gamin2.pdb
+C:\Users\poedx\source\repos\gamin2\gamin2\obj\Debug\gamin2.csproj.AssemblyReference.cache
+C:\Users\poedx\source\repos\gamin2\gamin2\obj\Debug\gamin2.Main.resources
+C:\Users\poedx\source\repos\gamin2\gamin2\obj\Debug\gamin2.Properties.Resources.resources
+C:\Users\poedx\source\repos\gamin2\gamin2\obj\Debug\gamin2.csproj.GenerateResource.cache
+C:\Users\poedx\source\repos\gamin2\gamin2\obj\Debug\gamin2.csproj.CoreCompileInputs.cache
+C:\Users\poedx\source\repos\gamin2\gamin2\obj\Debug\gamin2.exe
+C:\Users\poedx\source\repos\gamin2\gamin2\obj\Debug\gamin2.pdb
