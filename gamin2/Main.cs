@@ -23,6 +23,7 @@ namespace gamin2
         private Color background = Color.DarkGreen;
         private Color foreground = Color.DarkGray;
         private static List<List<Tile>> map = Map.GetMap();// https://www.tutorialsteacher.com/csharp/csharp-jagged-array        
+        private static List<Entity> entities = Map.GetEntities();
 
         public PBRenderer PanelDrawer { get; private set; }
 
@@ -45,6 +46,8 @@ namespace gamin2
                 }
 
             }
+
+            entities.Add(new Entity("CHAR").SetCharacter('@').SetForegroundColor(Color.YellowGreen) as Entity);
 
             RefreshPanel();
         }
@@ -95,16 +98,8 @@ namespace gamin2
 
                     PointF loc = tile.loc;
 
+                    PointF renderLoc = CoordinateHelper.ReturnRenderLocation(loc, Screen);
 
-                    PointF renderLoc = new PointF(
-                        loc.X * xTransform.X,
-                        loc.Y * yTransform.Y
-                                );
-
-                    renderLoc.Y += xTransform.Y * loc.X;
-
-                    renderLoc.X += hexWidth / 2f;
-                    renderLoc.Y += hexHeight / 2f;
 
                     values.Drawables.Add(
                         new Hex(
@@ -117,10 +112,19 @@ namespace gamin2
 
                     values.Drawables.Add(
 
-                        new Text(tile.loc.X + ", " + tile.loc.Y, new Font(FontFamily.GenericMonospace, 20), new SolidBrush(tile.foregroundColor), renderLoc)
+                        new Text(tile.Character.ToString(), new Font(FontFamily.GenericMonospace, 20), new SolidBrush(tile.foregroundColor), renderLoc)
                         );
 
                 });
+            });
+
+            entities.ForEach(e =>
+            {
+                PointF renderLoc = CoordinateHelper.ReturnRenderLocation(e.loc, Screen);
+
+                values.Drawables.Add(
+                    new Text(e.Character.ToString(), new Font(FontFamily.GenericMonospace, 20), new SolidBrush(e.foregroundColor), renderLoc)
+                );
             });
 
             PanelDrawer.BackgroundColor = Color.Black;
@@ -135,5 +139,57 @@ namespace gamin2
                 this.Close();
             }
         }
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {//https://stackoverflow.com/a/31464086
+            int moveAmount = 1;
+            switch (keyData)
+            {
+                #region move
+
+                case Keys.NumPad1://go down left by 100 (not sqrted)
+                    Move(-moveAmount, moveAmount);
+                    break;
+                case Keys.NumPad2://go down
+                case Keys.Down:
+                    Move(0, moveAmount);
+                    break;
+                case Keys.NumPad3://go down right
+                    Move(moveAmount, 0);
+                    break;
+
+               
+                //no 4, cope 
+                //no 5, cope 
+                //no 6, cope 
+                
+
+                case Keys.NumPad7://go down left by 100 (not sqrted)
+                    Move(-moveAmount, 0);
+                    break;
+                case Keys.NumPad8://go down
+                case Keys.Up:
+                    Move(0, -moveAmount);
+                    break;
+                case Keys.NumPad9://go down right
+                    Move(moveAmount, -moveAmount);
+                    break;
+
+                #endregion
+
+                default:
+                    return base.ProcessCmdKey(ref msg, keyData);
+            }
+            return true;
+        }
+
+        private void Move(int x, int y)
+        {
+            Entity entity = entities.FirstOrDefault(e => e.GetID() == "CHAR");
+
+            entity?.Move(x, y);
+
+            RefreshPanel();
+        }
+
     }
 }

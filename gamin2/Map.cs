@@ -10,10 +10,9 @@ namespace gamin2
     {
 
         private static List<List<Tile>> World = new List<List<Tile>>();// https://www.tutorialsteacher.com/csharp/csharp-jagged-array
-        public static List<List<Tile>> GetMap()
-        {
-            return World;
-        }
+        private static List<Entity> Entities = new List<Entity>();
+        public static List<List<Tile>> GetMap() { return World; }
+        public static List<Entity> GetEntities() { return Entities; }
 
     }
 }
