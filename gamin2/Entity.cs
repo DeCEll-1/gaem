@@ -14,7 +14,7 @@ namespace gamin2
 
         public Entity Move(int x, int y)
         {
-            loc.X += x; loc.Y += y; return this;
+            Loc.X += x; Loc.Y += y; return this;
         }
         public string GetID() { return ID; }
 

@@ -13,19 +13,19 @@ namespace gamin2
         public Tile() { }
         public Tile SetLoc(PointF loc)
         {
-            this.loc = loc;
+            this.Loc = loc;
             return this;
         }
 
         public Tile SetBackgroundColor(Color backgroundColor)
         {
-            this.backgroundColor = backgroundColor;
+            this.BackgroundColor = backgroundColor;
             return this;
         }
 
         public Tile SetForegroundColor(Color foregroundColor)
         {
-            this.foregroundColor = foregroundColor;
+            this.ForegroundColor = foregroundColor;
             return this;
         }
 
@@ -35,10 +35,11 @@ namespace gamin2
             return this;
         }
 
-        public PointF loc = new PointF(-1, -1);
-        public Color backgroundColor = Color.Black;
-        public Color foregroundColor = Color.White;
-        public char Character = 'X';
+        public PointF Loc = new PointF(-1, -1);
+        public Color BackgroundColor = Color.Black;
+        public Color ForegroundColor = Color.White;
+        public char Character = ' ';
+        public int CharacterSize = 64;
 
     }
 }

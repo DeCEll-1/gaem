@@ -47,7 +47,7 @@ namespace gamin2
 
             }
 
-            entities.Add(new Entity("CHAR").SetCharacter('@').SetForegroundColor(Color.YellowGreen) as Entity);
+            entities.Add(new Entity("CHAR").SetLoc(new PointF(1, 0)).SetCharacter('@').SetForegroundColor(Color.YellowGreen) as Entity);
 
             RefreshPanel();
         }
@@ -91,12 +91,14 @@ namespace gamin2
 
             RendererBaseClass values = PanelDrawer.rendererValues;
 
+            values.Drawables.Clear();
+
             map.ForEach(row =>
             {
                 row.ForEach(tile =>
                 {
 
-                    PointF loc = tile.loc;
+                    PointF loc = tile.Loc;
 
                     PointF renderLoc = CoordinateHelper.ReturnRenderLocation(loc, Screen);
 
@@ -106,13 +108,13 @@ namespace gamin2
                             renderLoc,
                             tileSize,
                             1,
-                            tile.foregroundColor
-                            ).SetInteriorColor(tile.backgroundColor)
+                            tile.ForegroundColor
+                            ).SetInteriorColor(tile.BackgroundColor)
                         );
 
                     values.Drawables.Add(
 
-                        new Text(tile.Character.ToString(), new Font(FontFamily.GenericMonospace, 20), new SolidBrush(tile.foregroundColor), renderLoc)
+                        new Text(tile.Character.ToString(), new Font(FontFamily.GenericMonospace, tile.CharacterSize), new SolidBrush(tile.ForegroundColor), renderLoc)
                         );
 
                 });
@@ -120,10 +122,10 @@ namespace gamin2
 
             entities.ForEach(e =>
             {
-                PointF renderLoc = CoordinateHelper.ReturnRenderLocation(e.loc, Screen);
+                PointF renderLoc = CoordinateHelper.ReturnRenderLocation(e.Loc, Screen);
 
                 values.Drawables.Add(
-                    new Text(e.Character.ToString(), new Font(FontFamily.GenericMonospace, 20), new SolidBrush(e.foregroundColor), renderLoc)
+                    new Text(e.Character.ToString(), new Font(FontFamily.GenericMonospace, e.CharacterSize), new SolidBrush(e.ForegroundColor), renderLoc)
                 );
             });
 
@@ -157,11 +159,11 @@ namespace gamin2
                     Move(moveAmount, 0);
                     break;
 
-               
+
                 //no 4, cope 
                 //no 5, cope 
                 //no 6, cope 
-                
+
 
                 case Keys.NumPad7://go down left by 100 (not sqrted)
                     Move(-moveAmount, 0);
