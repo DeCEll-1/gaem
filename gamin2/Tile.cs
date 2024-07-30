@@ -38,7 +38,7 @@ namespace gamin2
         public PointF Loc = new PointF(-1, -1);
         public Color BackgroundColor = Color.Black;
         public Color ForegroundColor = Color.White;
-        public char Character = ' ';
+        public char Character = 'X';
         public int CharacterSize = 64;
 
     }

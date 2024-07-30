@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Github\\gaem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4E541576-72CD-4F92-B8E5-94BDCD18EB2C}|gamin2\\gamin2.csproj|c:\\github\\gaem\\gamin2\\tile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4E541576-72CD-4F92-B8E5-94BDCD18EB2C}|gamin2\\gamin2.csproj|C:\\Github\\gaem\\gamin2\\tile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4E541576-72CD-4F92-B8E5-94BDCD18EB2C}|gamin2\\gamin2.csproj|solutionrelative:gamin2\\tile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E541576-72CD-4F92-B8E5-94BDCD18EB2C}|gamin2\\gamin2.csproj|c:\\github\\gaem\\gamin2\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E541576-72CD-4F92-B8E5-94BDCD18EB2C}|gamin2\\gamin2.csproj|solutionrelative:gamin2\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4E541576-72CD-4F92-B8E5-94BDCD18EB2C}|gamin2\\gamin2.csproj|c:\\github\\gaem\\gamin2\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,41 +38,53 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Entity.cs",
+              "DocumentMoniker": "C:\\Github\\gaem\\gamin2\\Entity.cs",
+              "RelativeDocumentMoniker": "gamin2\\Entity.cs",
+              "ToolTip": "C:\\Github\\gaem\\gamin2\\Entity.cs",
+              "RelativeToolTip": "gamin2\\Entity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-13T07:23:06.362Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Tile.cs",
               "DocumentMoniker": "C:\\Github\\gaem\\gamin2\\Tile.cs",
               "RelativeDocumentMoniker": "gamin2\\Tile.cs",
               "ToolTip": "C:\\Github\\gaem\\gamin2\\Tile.cs",
               "RelativeToolTip": "gamin2\\Tile.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAwwCkAAAAlAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAowCYAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-10T07:47:30.591Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Main.cs",
               "DocumentMoniker": "C:\\Github\\gaem\\gamin2\\Main.cs",
               "RelativeDocumentMoniker": "gamin2\\Main.cs",
               "ToolTip": "C:\\Github\\gaem\\gamin2\\Main.cs",
               "RelativeToolTip": "gamin2\\Main.cs",
-              "ViewState": "AQIAAFUAAAAAAAAAAAAcwF8AAAAeAAAA",
+              "ViewState": "AQIAAFkAAAAAAAAAAAAuwHUAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-10T07:42:28.716Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Main.cs [Design]",
               "DocumentMoniker": "C:\\Github\\gaem\\gamin2\\Main.cs",
               "RelativeDocumentMoniker": "gamin2\\Main.cs",
               "ToolTip": "C:\\Github\\gaem\\gamin2\\Main.cs [Design]",
               "RelativeToolTip": "gamin2\\Main.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T07:00:22.673Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-07-10T07:00:22.673Z"
             }
           ]
         }
